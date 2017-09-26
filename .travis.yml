@@ -1,0 +1,10 @@
+language: go
+
+install:
+  - go get github.com/InkProject/ink
+  - go get github.com/polym/upx
+
+script:
+  - ink build
+  - upx login nvidia lentin ${UPYUN_PWD}
+  - upx sync public / --delete

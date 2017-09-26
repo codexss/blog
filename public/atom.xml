@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom">
+  <title>LENTIN BLOG</title>
+  <id>https://lte.pw</id>
+  <updated>2017-09-25T13:50:54+08:00</updated>
+  <subtitle>折腾一些无聊的东西</subtitle>
+  <link href="https://lte.pw"></link>
+  <author>
+    <name>LENTIN BLOG</name>
+  </author>
+  <entry>
+    <title>Openwrt/LEDE 利用 3G 上网卡推送短信到 Telegram/微信</title>
+    <updated>2017-06-08T17:17:21+08:00</updated>
+    <id>tag:lte.pw,2017-06-08:/lede-openwrt-smstools3-push-sms-to-telegram.html</id>
+    <content type="html"></content>
+    <link href="https://lte.pw/lede-openwrt-smstools3-push-sms-to-telegram.html"></link>
+  </entry>
+  <entry>
+    <title>iPhone不越狱安装非应用商店的ipa应用</title>
+    <updated>2017-05-11T01:34:44+08:00</updated>
+    <id>tag:lte.pw,2017-05-11:/cydia-impactor.html</id>
+    <content type="html"></content>
+    <link href="https://lte.pw/cydia-impactor.html"></link>
+  </entry>
+  <entry>
+    <title>斐讯K1刷Padavan固件实现中继5G WiFi信号</title>
+    <updated>2016-09-11T16:06:06+08:00</updated>
+    <id>tag:lte.pw,2016-09-11:/phicomm-k1-use-padavanf-firemware-5g-ap.html</id>
+    <content type="html">&lt;p&gt;淘宝弄了台斐讯K1，正好WNDR4300到我卧室的信号不太好，就拿来中继信号用了&lt;/p&gt;&#xA;</content>
+    <link href="https://lte.pw/phicomm-k1-use-padavanf-firemware-5g-ap.html"></link>
+  </entry>
+  <entry>
+    <title>告白气球</title>
+    <updated>2016-09-03T23:06:05+08:00</updated>
+    <id>tag:lte.pw,2016-09-03:/gao-bai-qi-qiu.html</id>
+    <content type="html"></content>
+    <link href="https://lte.pw/gao-bai-qi-qiu.html"></link>
+  </entry>
+  <entry>
+    <title>英雄联盟源计划三个英雄的插画</title>
+    <updated>2016-08-08T12:49:05+08:00</updated>
+    <id>tag:lte.pw,2016-08-08:/lol-source-project.html</id>
+    <content type="html"></content>
+    <link href="https://lte.pw/lol-source-project.html"></link>
+  </entry>
+  <entry>
+    <title>再次填坑：WR703单网口LAN/WAN识别问题的解决方案</title>
+    <updated>2016-08-01T16:14:50+08:00</updated>
+    <id>tag:lte.pw,2016-08-01:/wr703-lan-wan-fix.html</id>
+    <content type="html">&lt;p&gt;今天在网上查了下，没有什么好用的解决方案，所以我再吧这个坑填一下，很简单就可以搞定，利用Openwrt自带的的VLAN功能，不需要下载任何软件包.&lt;/p&gt;&#xA;</content>
+    <link href="https://lte.pw/wr703-lan-wan-fix.html"></link>
+  </entry>
+  <entry>
+    <title>关于Windows使用安卓USB共享网络的问题</title>
+    <updated>2016-07-24T11:40:34+08:00</updated>
+    <id>tag:lte.pw,2016-07-24:/fix-windows-android-usb-tether.html</id>
+    <content type="html">&lt;p&gt;这可能是个windows的历史遗留问题，我的Nexus5在XP到Win10一直有打开USB共享之后电脑就卡死的情况&lt;/p&gt;&#xA;</content>
+    <link href="https://lte.pw/fix-windows-android-usb-tether.html"></link>
+  </entry>
+  <entry>
+    <title>解决Android6.0版本WAP接入点4G网络下无法获取DNS的问题</title>
+    <updated>2016-07-01T10:16:51+08:00</updated>
+    <id>tag:lte.pw,2016-07-01:/fix-android6-0-wap-4g-dns.html</id>
+    <content type="html">&lt;p&gt;要解决这个问题我们通过修改内核来实现&lt;/p&gt;&#xA;</content>
+    <link href="https://lte.pw/fix-android6-0-wap-4g-dns.html"></link>
+  </entry>
+</feed>
