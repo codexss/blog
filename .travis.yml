@@ -6,5 +6,5 @@ install:
 
 script:
   - ink build
-  - upx -q login nvidia travisci ${PWD}
-  - upx -q sync --delete public /
+  - upx login nvidia travisci ${AUTH}
+  - upx sync --delete public /
