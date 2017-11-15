@@ -6,5 +6,5 @@ install:
 
 script:
   - ink build
-  - upx login nvidia lentin ${UPYUN_PWD}
-  - upx sync public / --delete
+  - upx -q login nvidia travisci ${PWD}
+  - upx -q sync --delete public /
