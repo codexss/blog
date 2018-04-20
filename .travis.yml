@@ -2,9 +2,15 @@ language: go
 
 install:
   - go get github.com/InkProject/ink
-  - go get github.com/polym/upx
 
 script:
   - ink build
-  - upx login nvidia travisci ${AUTH}
-  - upx sync --delete public /
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  local-dir: public
+  on:
+    branch: master
