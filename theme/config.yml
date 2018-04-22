@@ -3,6 +3,7 @@ copy:
     - bundle
     - favicon.png
     - robots.txt
+    - CNAME
 # I18n Support
 lang:
     archive:

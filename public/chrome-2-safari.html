@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=1">
+<meta name="renderer" content="webkit">
+<meta name="google" value="notranslate">
+<meta name="robots" content="index,follow">
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="LENTIN BLOG">
+<meta name="twitter:description" content="折腾一些无聊的东西">
+<meta name="twitter:image:src" content="https://lte.pw/images/avatar.png">
+
+<meta property="og:url" content="https://lte.pw">
+<meta property="og:title" content="LENTIN BLOG">
+<meta property="og:description" content="折腾一些无聊的东西">
+<meta property="og:site_name" content="LENTIN BLOG">
+<meta property="og:image" content="https://lte.pw/images/avatar.png">
+<meta property="og:type" content="website">
+<meta name="robots" content="noodp">
+
+<meta itemprop="name" content="LENTIN BLOG">
+<meta itemprop="description" content="折腾一些无聊的东西">
+<meta itemprop="image" content="https://lte.pw/images/avatar.png">
+
+<link rel="canonical" href="https://lte.pw">
+
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-itouch-icon" href="/favicon.png">
+<link rel="stylesheet" href="/bundle/index.css">
+<script type="text/javascript">
+    var timeSinceLang = {
+        year: '年前',
+        month: '个月前',
+        day: '天前',
+        hour: '小时前',
+        minute: '分钟前',
+        second: '秒前'
+    };
+    var root = '';
+</script>
+
+<script type="text/javascript">
+    var conn, reloadTimer, connectTimer;
+    var connect = function() {
+        conn = new WebSocket('ws://' + location.host + '/live');
+        conn.onmessage = function(event) {
+            if (event.data === 'change') {
+                if (reloadTimer) clearTimeout(reloadTimer);
+                reloadTimer = setTimeout(function() {
+                    window.location.reload();
+                }, 200);
+            }
+        };
+        conn.onclose = function() {
+            if (connectTimer) clearTimeout(connectTimer);
+            connectTimer = setTimeout(function() {
+                connect();
+            }, 1000);
+        };
+    };
+    connect();
+</script>
+
+
+        <meta name="keywords" content="Chrome,Safari,iOS,https,">
+        <meta name="description" content="一个简易的 PC 浏览器同步手机当前打开网页的方案">
+        <meta name="author" content="">
+        <title>一个简易的 PC 浏览器同步手机当前打开网页的方案</title>
+    </head>
+    <body>
+        <article class="container">
+            <header class="header-wrap">
+  <a class="index" href="/">
+    <img class="logo" src="/images/avatar.png" />
+    LENTIN BLOG
+  </a>
+  <ul class="menu">
+      <li class="menu-item"><a href="/archive.html">归档</a></li>
+      <li class="menu-item"><a href="/tag.html">标签</a></li>
+      <li class="menu-item"><a href="/atom.xml">订阅</a></li>
+  </ul>
+</header>
+
+            <article class="main article">
+                <h1 class="title">一个简易的 PC 浏览器同步手机当前打开网页的方案</h1>
+                <section class="info">
+                    
+                    
+                    
+                    <span class="date" data-time="1524401864"><span class="from"></span></span>
+                    
+                    <span class="tags"><a class="tag" href="/tag/Chrome/index.html">Chrome</a><a class="tag" href="/tag/Safari/index.html">Safari</a><a class="tag" href="/tag/iOS/index.html">iOS</a><a class="tag" href="/tag/https/index.html">https</a></span>
+                </section>
+                <article class="content"><p>有时候 PC 上浏览了个页面想在手机上打开，但是 PC 的 Chrome 跟手机 Safari 的历史记录没有同步，扫二维码也不是特别方便，我做了个书签，搭配一个 php 使用。</p>
+
+<p>php 源文件如下，只是获取 url 之后写到一个 txt 里面暂存 url</p>
+
+<p>u.php</p>
+
+<pre><code>&lt;?php  
+header('Access-Control-Allow-Origin:*');  
+if ($_GET[&quot;url&quot;]) {  
+fwrite(fopen(&quot;url.txt&quot;,&quot;w&quot;),$_GET[&quot;url&quot;]);  
+echo &quot;Success&quot;;  
+} else {  
+header('Location: '.file_get_contents('url.txt'));  
+}  
+?&gt;
+</code></pre>
+
+<p>Crhome 书签地址如下</p>
+
+<pre><code>javascript:xmlhttp=new XMLHttpRequest();xmlhttp.open(&quot;get&quot;,&quot;https://yourdomain/u.php?url=&quot;+window.location.href,true);xmlhttp.send();xmlhttp.onreadystatechange=function(){if (xmlhttp.readyState==4 &amp;&amp; xmlhttp.status==200){alert(&quot;ok&quot;);}} 
+</code></pre>
+
+<p>实现的结果就是浏览器上点一下书签，然后手机上访问 <a href="https://yourdomain/u.php">https://yourdomain/u.php</a> 就能跳转到你当前标记的网页了。</p>
+</article>
+                <section class="author">
+                    
+                    <a class="name" href="/about..html"></a>
+                    <div class="intro"></div>
+                </section>
+                <section class="recommend">
+                    
+                    
+                    <section class="nav next">
+                        <div class="head">下篇文章</div>
+                        <a class="link" href="/lede-openwrt-smstools3-push-sms-to-telegram.html">Openwrt/LEDE 利用 3G 上网卡推送短信到 Telegram/微信</a>
+                    </section>
+                    
+                </section>
+                
+    <section id="disqus_thread"></section>
+    <script type="text/javascript">
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//codexss.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+
+
+            </article>
+        </article>
+        <footer class="footer">
+    <span class="copyright">
+        LENTIN BLOG ©
+        <script type="text/javascript">
+            document.write(new Date().getFullYear());
+        </script>
+    </span>
+    <span class="publish">Powered by <a href="http://www.chole.io/" target="_blank">Ink</a></span>
+</footer>
+
+        <script src="/bundle/index.js"></script>
+    </body>
+</html>

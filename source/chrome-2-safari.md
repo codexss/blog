@@ -10,16 +10,18 @@ date: 2018-04-22 20:57:44
 
 php 源文件如下，只是获取 url 之后写到一个 txt 里面暂存 url 
 
-u.php 
-`<?php 
-header('Access-Control-Allow-Origin:*'); 
-if ($_GET["url"]) { 
-fwrite(fopen("url.txt","w"),$_GET["url"]); 
-echo "Success"; 
-} else { 
-header('Location: '.file_get_contents('url.txt')); 
-} 
-?> `
+u.php  
+```
+<?php  
+header('Access-Control-Allow-Origin:*');  
+if ($_GET["url"]) {  
+fwrite(fopen("url.txt","w"),$_GET["url"]);  
+echo "Success";  
+} else {  
+header('Location: '.file_get_contents('url.txt'));  
+}  
+?>
+```
 
 Crhome 书签地址如下 
 ```
