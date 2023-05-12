@@ -20,7 +20,7 @@ jobs:
 
     - name: Build
       run: |
-        go get github.com/InkProject/ink
+        go install github.com/InkProject/ink@latest
         ink build
 
     - name: Deploy to gh-pages
