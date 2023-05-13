@@ -7,5 +7,5 @@ tags:
   - 音乐
 ---
 
-<iframe src="https://www.bilibili.com/html/html5player.html?cid=8839110&aid=5438189" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="//player.bilibili.com/player.html?aid=5438189&bvid=BV1Ts411176P&cid=8839110&page=1" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 http://www.bilibili.com/video/av5438189/
