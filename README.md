@@ -1,4 +1,4 @@
-# LENTIN BLOG [![Build Status](https://github.com/codexss/blog/actions/workflows/main.yml/badge.svg)](https://travis-ci.org/codexss/blog)
+# LENTIN BLOG [![Build and Deploy](https://github.com/codexss/blog/actions/workflows/main.yml/badge.svg)](https://github.com/codexss/blog/actions/workflows/main.yml)
 
 [https://lte.pw](https://lte.pw)
 ## Blog Source Code
