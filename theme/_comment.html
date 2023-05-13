@@ -1,4 +1,6 @@
 {{if .Site.Comment}}
+<script type="module">
+  import DisqusJS from 'https://cdn.jsdelivr.net/npm/disqusjs@3.0/dist/browser/disqusjs.es2018.es.min.mjs'
+</script>
 <div id="disqusjs"></div>
-<script>disqusjs.render(document.getElementById('disqusjs'));</script>
 {{end}}
