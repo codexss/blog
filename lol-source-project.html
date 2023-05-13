@@ -107,17 +107,14 @@
                     
                 </section>
                 
-<script src="https://cdn.jsdelivr.net/npm/disqusjs@3.0/dist/browser/disqusjs.es2015.umd.min.js"></script>
-<div id="disqusjs"></div>
+<div id="disqus_thread"></div>
 <script>
-    var disqusjs = new DisqusJS({
-        shortname: 'codexss',
-        api: 'https://lte.pw/api/',
-        apikey: 'Yf0IFwe2tWZKQLNHLrxy9aJmw4iVk02ViU5q2kqxFBaq9IQ1hvQHxW3rAVKQ5Tv1',
-        admin: 'LENTlN',
-        adminLabel: 'ADMIN'
-    });
-    disqusjs.render('#disqusjs');
+    (function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://codexss.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
 </script>
 
 
